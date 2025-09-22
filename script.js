@@ -8,31 +8,33 @@ btn.addEventListener("click", (evt) => {
 })
 
 btn.addEventListener("click", (evt) => {
-    console.log("Button was clickid  handler  - - 3");
+    console.log("Button was clickid  handler  - - 2");
     // console.log(evt);
     // console.log(evt.target)   
 })
 
-const deleteButton  = () => {
+// Handler 3 (named function)
 
+const deletehandler3  = () => {
+    console.log("Button was clickid  handler  - - 3");
 } 
+btn.addEventListener("click",deletehandler3);
+btn.removeEventListener("click" ,deletehandler3) ;
 
-// btn.addEventListener("click", (evt) => {
-//     console.log("Button was clickid  handler  - - 3");
-//     // console.log(evt);
-//     // console.log(evt.target);  
-// })
+
+// Example: remove handler 3 after some condition
+// btn.removeEventListener("click", deleteHandler3);
 
 
 
 btn.addEventListener("click", (evt) => {
     console.log("Button was clickid  handler   - 4");
     // console.log(evt);
-    // console.log(evt.target);
-    
-    
-    
-})
+    // console.log(evt.target);   
+});
+
+
+
 
 
 
