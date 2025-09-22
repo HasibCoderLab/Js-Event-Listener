@@ -1,48 +1,53 @@
+// ====================        ===================
+let btn = document.querySelector("#btn");
+btn.addEventListener("click", (evt) => {
+    console.log("Button was clickid  handler  - - 1");
+    // console.log(evt);
+    // console.log(evt.target);
+ 
+})
+
+btn.addEventListener("click", (evt) => {
+    console.log("Button was clickid  handler  - - 3");
+    // console.log(evt);
+    // console.log(evt.target)   
+})
+
+const deleteButton  = () => {
+
+} 
+
+// btn.addEventListener("click", (evt) => {
+//     console.log("Button was clickid  handler  - - 3");
+//     // console.log(evt);
+//     // console.log(evt.target);  
+// })
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+btn.addEventListener("click", (evt) => {
+    console.log("Button was clickid  handler   - 4");
+    // console.log(evt);
+    // console.log(evt.target);
+    
+    
+    
+})
 
 
 
 
 // ============= use EventListener........ ============
-let btns = document.querySelectorAll("button");
+let btns = document.getElementsByClassName("button");
 btns.forEach((clickBtn) => {
     clickBtn.addEventListener("click", () => {
-       console.log("Hello");
+       console.log("Button was clickid  handler  -");
 
     });
 });
 
 
-// *============== * increment Hello *  + create Hello           ============    
+// *============== * increment Button was clickid  handler  - *  + create Button was clickid  handler  -           ============    
 // **
 // ***
 let allBtns = document.querySelectorAll("button");
@@ -53,7 +58,7 @@ btns.forEach((clickBtn) => {
         // clickBtn.innerText = "Amare Click Dise"
 
         let newH2 = document.createElement("h2");
-        newH2.innerText = `Hello ${counter}`;
+        newH2.innerText = `Button was clickid  handler  - ${counter}`;
         clickBtn.parentElement.append(newH2);
         console.log(newH2);
         counter++;
