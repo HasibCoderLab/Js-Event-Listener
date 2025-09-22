@@ -1,11 +1,42 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ============= use EventListener........ ============
 let btns = document.querySelectorAll("button");
 btns.forEach((clickBtn) => {
     clickBtn.addEventListener("click", () => {
-
-
-        console.log("Hello");
+       console.log("Hello");
 
     });
 });
